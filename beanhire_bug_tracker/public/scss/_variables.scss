@@ -1,0 +1,168 @@
+//variables
+
+//font family
+$font-light: "proxima-nova-light", "Helvetica Neue", "Arial", sans-serif;
+$font-regular: "proxima-nova-regular","Helvetica Neue", "Arial", sans-serif;
+$font-medium: "proxima-nova-semibold","Helvetica Neue", "Arial", sans-serif;
+$font-bold: "proxima-nova-bold","Helvetica Neue", "Arial", sans-serif;
+$font-icon: "materialdesignicons-webfont", sans-serif;
+$font-ionicon: "ionicons", sans-serif;
+
+//colors
+$primary-color: #186bb7;
+$blue-color: #0288d1;
+$seagreen-color: #07cdbe;
+$orange-color: #f39c12;
+$red-color: #d21c15;
+$green-color: #2ecc71;
+$yellow-color: #f1c40f;
+$alert-primary-color: rgba(2,136,209,0.9);
+$alert-seagreen-color: rgba(7,205,190,0.9);
+$alert-orange-color: rgba(243,156,18,0.9);
+$alert-red-color: rgba(210,28,21,0.9);
+$alert-green-color: rgba(46,204,113,0.9);
+$background-color: #f0f3f6;
+$background-color-dark: #e9edf1;
+$color-white: #ffffff;
+$color-ee: #eeeeee;
+$color-e9: #e9e9e9;
+$color-f0: #f0f0f0;
+$color-f9: #f9f9f9;
+$color-fa: #fafafa;
+$color-fc: #fcfcfc;
+$color-cc: #cccccc;
+$color-dd: #dddddd;
+$color-dark: #464a4d;
+$color-light: #6f7477;
+$color-lighter: #9fa9b7;
+$border-dark: #bdbdbd;
+$border-light: #d8d8d8;
+$form-border: #cacfd6;
+$form-border-dark: #a8acb3;
+$form-background: #f8f9fc;
+$form-background-disabled: #eceef2;
+$panel-border: #86c1f7;
+
+$color-5: rgba(0,0,0,0.05);
+$color-10: rgba(0,0,0,0.1);
+$color-15: rgba(0,0,0,0.15);
+$color-20: rgba(0,0,0,0.20);
+$color-25: rgba(0,0,0,0.25);
+$color-30: rgba(0,0,0,0.30);
+$color-35: rgba(0,0,0,0.35);
+$color-40: rgba(0,0,0,0.40);
+$color-45: rgba(0,0,0,0.45);
+$color-50: rgba(0,0,0,0.50);
+$color-55: rgba(0,0,0,0.55);
+$color-60: rgba(0,0,0,0.60);
+$color-65: rgba(0,0,0,0.65);
+$color-70: rgba(0,0,0,0.70);
+$color-75: rgba(0,0,0,0.75);
+$color-80: rgba(0,0,0,0.80);
+$color-85: rgba(0,0,0,0.85);
+$color-90: rgba(0,0,0,0.90);
+$color-95: rgba(0,0,0,0.95);
+$color-100: rgba(0,0,0,1);
+
+$color-w5: rgba(255,255,255,0.05);
+$color-w10: rgba(255,255,255,0.1);
+$color-w15: rgba(255,255,255,0.15);
+$color-w20: rgba(255,255,255,0.20);
+$color-w25: rgba(255,255,255,0.25);
+$color-w30: rgba(255,255,255,0.30);
+$color-w35: rgba(255,255,255,0.35);
+$color-w40: rgba(255,255,255,0.40);
+$color-w45: rgba(255,255,255,0.45);
+$color-w50: rgba(255,255,255,0.50);
+$color-w55: rgba(255,255,255,0.55);
+$color-w60: rgba(255,255,255,0.60);
+$color-w65: rgba(255,255,255,0.65);
+$color-w70: rgba(255,255,255,0.70);
+$color-w75: rgba(255,255,255,0.75);
+$color-w80: rgba(255,255,255,0.80);
+$color-w85: rgba(255,255,255,0.85);
+$color-w90: rgba(255,255,255,0.90);
+$color-w95: rgba(255,255,255,0.95);
+$color-w100: rgba(255,255,255,1);
+
+$primary-color-5: rgba(13,162,192,0.05);
+$primary-color-10: rgba(13,162,192,0.10);
+$primary-color-15: rgba(13,162,192,0.15);
+$primary-color-20: rgba(13,162,192,0.20);
+$primary-color-25: rgba(13,162,192,0.25);
+$primary-color-30: rgba(13,162,192,0.30);
+$primary-color-35: rgba(13,162,192,0.35);
+$primary-color-40: rgba(13,162,192,0.40);
+$primary-color-45: rgba(13,162,192,0.45);
+$primary-color-50: rgba(13,162,192,0.50);
+$primary-color-55: rgba(13,162,192,0.55);
+$primary-color-60: rgba(13,162,192,0.60);
+$primary-color-65: rgba(13,162,192,0.65);
+$primary-color-70: rgba(13,162,192,0.70);
+$primary-color-75: rgba(13,162,192,0.75);
+$primary-color-80: rgba(13,162,192,0.80);
+$primary-color-85: rgba(13,162,192,0.85);
+$primary-color-90: rgba(13,162,192,0.90);
+$primary-color-95: rgba(13,162,192,0.95);
+
+$orange-color-5: rgba(243,156,18,0.05);
+$orange-color-10: rgba(243,156,18,0.10);
+$orange-color-15: rgba(243,156,18,0.15);
+$orange-color-20: rgba(243,156,18,0.20);
+$orange-color-25: rgba(243,156,18,0.25);
+$orange-color-30: rgba(243,156,18,0.30);
+$orange-color-35: rgba(243,156,18,0.35);
+$orange-color-40: rgba(243,156,18,0.40);
+$orange-color-45: rgba(243,156,18,0.45);
+$orange-color-50: rgba(243,156,18,0.50);
+$orange-color-55: rgba(243,156,18,0.55);
+$orange-color-60: rgba(243,156,18,0.60);
+$orange-color-65: rgba(243,156,18,0.65);
+$orange-color-70: rgba(243,156,18,0.70);
+$orange-color-75: rgba(243,156,18,0.75);
+$orange-color-80: rgba(243,156,18,0.80);
+$orange-color-85: rgba(243,156,18,0.85);
+$orange-color-90: rgba(243,156,18,0.90);
+$orange-color-95: rgba(243,156,18,0.95);
+
+//social colors
+$fb-color: #3b5998;
+$gplus-color: #dd4b39;
+$linkedin-color: #0077b5;
+$twitter-color: #1da1f2;
+
+//theme colors
+$theme-default: #46a4c6;
+$theme-1: #2980b9;
+$theme-2: #27ae60;
+$theme-3: #16a085;
+$theme-4: #8e44ad;
+$theme-5: #2c3e50;
+$theme-6: #f39c12;
+$theme-7: #d35400;
+$theme-8: #c0392b;
+$theme-9: #bdc3c7;
+$theme-10: #7f8c8d;
+
+//font sizes
+$font-8: 8px;
+$font-10: 10px;
+$font-11: 11px;
+$font-12: 12px;
+$font-13: 13px;
+$font-14: 14px;
+$font-15: 15px;
+$font-16: 16px;
+$font-18: 18px;
+$font-20: 20px;
+$font-22: 22px;
+$font-24: 24px;
+$font-26: 26px;
+$font-28: 28px;
+$font-30: 30px;
+$font-32: 32px;
+$font-34: 34px;
+$font-36: 36px;
+$font-38: 38px;
+$font-40: 40px;
+$font-60: 60px;

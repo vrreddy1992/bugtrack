@@ -1,0 +1,212 @@
+.modal{
+	.modal-header,modal-footer{
+		@include padding-tb(5px,5px);
+	}
+	.modal-header{
+		color: $primary-color;
+        background: $form-background;
+        border-radius: 4px 4px 0 0;
+	}
+}
+
+//alert
+.alert {
+    @include padding-all-alt(6px, 6px);
+    background-color: $color-white;
+    border-radius: 6px;
+    border: 0px;
+    @include box-shadow(0px, 2px, 4px, 0px, $color-15);
+    display: table;
+    width: 30%;
+    height: 42px;
+    color: $color-light;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    z-index: 99999;
+    >a {
+        position: absolute;
+        right: 8px;
+        top: 8px;
+        >i {
+            color: $color-white;
+        }
+    }
+    >span {
+        display: block;
+        color: $color-white;
+        font-size: $font-16;
+        line-height: 26px;
+        text-align: center;
+    }
+    &.alert-info {
+        color: $color-white;
+        background-color: $alert-primary-color;
+    }
+    &.alert-success {
+        color: $color-white;
+        background-color: $alert-green-color;
+    }
+    &.alert-warning {
+        color: $color-white;
+        background-color: $alert-orange-color;
+    }
+    &.alert-danger {
+        color: $color-white;
+        background-color: $alert-red-color;
+    }
+}
+
+//fullscreen popup
+.full-screen-popup {
+    width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    background-color: $color-50;
+    position: fixed;
+    //top: 50px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9997;
+    overflow-y: hidden;
+}
+.popup-content {
+    width: -moz-calc(100% - 100px);
+    width: -webkit-calc(100% - 100px);
+    width: -o-calc(100% - 100px);
+    width: calc(100% - 100px);
+    min-height: 100%;
+    max-height: 100%;
+    position: fixed;
+    //top: 50px;
+    bottom: 0;
+    right: 0;
+    z-index: 9998;
+    background-color: $color-white;
+    height: 100%;
+    .popup-header {
+        @include padding-all(10px);
+        // background-color: $background-color;
+        // border-bottom: 1px solid $border-light;
+        // border-left: 4px solid $primary-color;
+        height: 43px;
+        background: $primary-color;
+        color: $color-white;
+        font-size: $font-15;
+        font-family: $font-medium;
+        text-transform: uppercase;
+        line-height: 20px;
+        display: table;
+        width: 100%;
+        .popup-close {
+            @include transition(200ms);
+            @include padding-t(8px);
+            position: fixed;
+            left: 20px;
+            //top: 53px;
+            top: 5px;
+            height: 36px;
+            width: 36px;
+            background-color: $color-white;
+            border-radius: 50%;
+            display: block;
+            color: $red-color;
+            font-size: $font-26;
+            vertical-align: middle;
+            text-align: center;
+            &:hover {
+                background-color: $red-color;
+                color: $color-white;
+            }
+        }
+        .popup-breadcrumb {
+            >span {
+                >i {
+                    color: $color-dark;
+                }
+            }
+            .popup-breadcrumb-title {
+                color: $color-light;
+                &.active {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+    .popup-body {
+        @include padding-all(10px);
+        height: -moz-calc(100% - 135px);
+        height: -webkit-calc(100% - 135px);
+        height: -o-calc(100% - 135px);
+        height: calc(100% - 135px);
+        overflow-y: auto;
+        position: relative;
+        .resume-preview{
+            border: 1px solid $border-light;
+            border-radius: 4px;
+        }
+        .coment-container{
+            position: absolute;
+            bottom: 0;
+        }
+        .comments-data{
+            @include margin-b(80px);
+        }
+    }
+    .popup-footer {
+        @include padding-all-alt(15px,10px);
+        background-color: $background-color;
+        border-top: 1px solid $border-light;
+        position: absolute;
+        bottom: 50px;
+        left: 0;
+        width: 100%;
+        display: block;
+        z-index: 9;
+    }
+}
+
+//fullscreen popup alt
+.full-screen-popup-alt {
+    position: fixed;
+    top: 50px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $color-w95;
+    z-index: 999;
+    overflow-y: hidden;
+    &.dark-transparent {
+        min-height: 100%;
+        height: auto;
+        background-color: $color-55;
+        overflow-y: auto;
+    }
+}
+
+//seach popup
+.search-full {
+    @include padding-t(8%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $color-75;
+    z-index: 9999;
+    .search-pop-close {
+        @include padding-all-alt(1px,3px);
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        background-color: $red-color;
+        color: $color-white;
+        font-size: $font-18;
+    }
+}
+.modal-timezone-popup{
+    width: 450px;
+}

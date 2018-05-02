@@ -1,0 +1,245 @@
+//buttons
+.btn {
+    @include padding-all-alt(2px,6px);
+    outline: 0;
+    box-shadow: none;
+    border-radius: 4px;
+    font-size: $font-14;
+    &:hover, &:focus, &:active {
+        box-shadow: none;
+        outline: 0 !important;
+    }
+    &.btn-default {
+        border: 1px solid $color-white;
+        background-color: $color-white;
+        color: $color-light;
+        &:hover, &:focus, &:active {
+            border-color: darken($color-white,5%);
+            background-color: darken($color-white,5%);
+        }
+    }
+    &.btn-primary {
+        border: 1px solid $primary-color;
+        background-color: $primary-color;
+        color: $color-white;
+        &:hover, &:focus, &:active {
+            border-color: darken($primary-color, 5%);
+            background-color: darken($primary-color, 5%);
+        }
+    }
+    &.btn-info {
+        border: 1px solid $seagreen-color;
+        background-color: $seagreen-color;
+        color: $color-white;
+        &:hover, &:focus, &:active {
+            border-color: darken($seagreen-color, 5%);
+            background-color: darken($seagreen-color, 5%);
+        }
+    }
+    &.btn-success {
+        border: 1px solid $green-color;
+        background-color: $green-color;
+        color: $color-white;
+        &:hover, &:focus, &:active {
+            border-color: darken($green-color, 5%);
+            background-color: darken($green-color, 5%);
+        }
+    }
+    &.btn-warning {
+        border: 1px solid $orange-color;
+        background-color: $orange-color;
+        color: $color-white;
+        &:hover, &:focus, &:active {
+            border-color: darken($orange-color, 5%);
+            background-color: darken($orange-color, 5%);
+        }
+    }
+    &.btn-danger {
+        border: 1px solid $red-color;
+        background-color: $red-color;
+        color: $color-white;
+        &:hover, &:focus, &:active {
+            border-color: darken($red-color, 5%);
+            background-color: darken($red-color, 5%);
+        }
+    }
+    &.btn-attach {
+        @include padding-all-alt(0px,6px);
+        color: $primary-color;
+        border: 1px solid $color-10;
+        background-color: $color-white;
+        &:hover, &:focus, &:active {
+            border-color: $color-15;
+            background-color: $color-15;
+        }
+    }
+    &.btn-sm {
+        @include padding-all-alt(1px,3px);
+        font-size: $font-12;
+    }
+    &.btn-lg {
+        @include padding-all-alt(6px,18px);
+        font-size: $font-16;
+    }
+    &.btn-outline {
+        background-color: transparent;
+        &.btn-default {
+            border: 1px solid $border-light;
+            background-color: transparent;
+            color: $color-light;
+            &:hover, &:focus, &:active {
+                background-color: $color-white;
+                color: $color-dark;
+            }
+        }
+        &.btn-primary {
+            border: 1px solid $primary-color;
+            background-color: transparent;
+            color: $primary-color;
+            &:hover, &:focus, &:active {
+                background-color: $primary-color;
+                color: $color-white;
+            }
+        }
+        &.btn-info {
+            border: 1px solid $seagreen-color;
+            background-color: transparent;
+            color: $seagreen-color;
+            &:hover, &:focus, &:active {
+                background-color: $seagreen-color;
+                color: $color-white;
+            }
+        }
+        &.btn-success {
+            border: 1px solid $green-color;
+            background-color: transparent;
+            color: $green-color;
+            &:hover, &:focus, &:active {
+                background-color: $green-color;
+                color: $color-white;
+            }
+        }
+        &.btn-warning {
+            border: 1px solid $orange-color;
+            background-color: transparent;
+            color: $orange-color;
+            &:hover, &:focus, &:active {
+                background-color: $orange-color;
+                color: $color-white;
+            }
+        }
+        &.btn-danger {
+            border: 1px solid $red-color;
+            background-color: transparent;
+            color: $red-color;
+            &:hover, &:focus, &:active {
+                background-color: $red-color;
+                color: $color-white;
+            }
+        }
+        &.btn-attach {
+            @include margin-t(3px);
+            border: 1px solid $color-10;
+            background-color: $color-white;
+            color: $primary-color;
+            font-size: $font-11;
+            &:hover, &:focus, &:active {
+                background-color: $color-20;
+                color: $color-white;
+            }
+        }
+    }
+}
+.btn-default-text {
+    @include margin-all-alt(2px,6px);
+    @include padding-all(0);
+    border: 0px;
+    border-bottom: 1px solid transparent;
+    background-color: transparent;
+    color: $color-light;
+    font-size: $font-14;
+    &:hover, &:focus, &:active {
+        color: $color-light;
+        outline: 0;
+        border-bottom: 1px solid $border-light;
+    }
+}
+.btn-primary-text {
+    @include margin-all-alt(2px,6px);
+    @include padding-all(0);
+    border: 0px;
+    border-bottom: 1px solid transparent;
+    background-color: transparent;
+    color: $primary-color;
+    font-size: $font-14;
+    &:hover, &:focus, &:active {
+        color: $primary-color;
+        outline: 0;
+        border-bottom: 1px solid $primary-color;
+    }
+}
+.btn-info-text {
+    @include margin-all-alt(2px,6px);
+    @include padding-all(0);
+    border: 0px;
+    border-bottom: 1px solid transparent;
+    background-color: transparent;
+    color: $seagreen-color;
+    font-size: $font-14;
+    &:hover, &:focus, &:active {
+        color: $seagreen-color;
+        outline: 0;
+        border-bottom: 1px solid $seagreen-color;
+    }
+}
+.btn-success-text {
+    @include margin-all-alt(2px,6px);
+    @include padding-all(0);
+    border: 0px;
+    border-bottom: 1px solid transparent;
+    background-color: transparent;
+    color: $green-color;
+    font-size: $font-14;
+    &:hover, &:focus, &:active {
+        color: $green-color;
+        outline: 0;
+        border-bottom: 1px solid $green-color;
+    }
+}
+.btn-warning-text {
+    @include margin-all-alt(2px,6px);
+    @include padding-all(0);
+    border: 0px;
+    border-bottom: 1px solid transparent;
+    background-color: transparent;
+    color: $orange-color;
+    font-size: $font-14;
+    &:hover, &:focus, &:active {
+        color: $orange-color;
+        outline: 0;
+        border-bottom: 1px solid $orange-color;
+    }
+}
+.btn-danger-text {
+    @include margin-all-alt(2px,6px);
+    @include padding-all(0);
+    border: 0px;
+    border-bottom: 1px solid transparent;
+    background-color: transparent;
+    color: $red-color;
+    font-size: $font-14;
+    &:hover, &:focus, &:active {
+        color: $red-color;
+        outline: 0;
+        border-bottom: 1px solid $red-color;
+    }
+}
+.login-btn{
+    min-width:150px;
+}
+.bugsListFilter{
+    .btn{
+        @include padding-all-alt(0px,5px);
+        height:26px;
+    }
+}
